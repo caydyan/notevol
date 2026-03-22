@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+    />
+    <title>NEON PULSE / Mobile H5</title>
+    <meta
+      name="description"
+      content="一个为手机打造的视觉系 H5 体验：霓虹、流光、粒子与沉浸式互动。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <canvas id="starfield"></canvas>
+
+    <main class="app shell">
+      <header class="hero card tilt" data-tilt>
+        <div class="badge">2026 · MOBILE H5 EXPERIENCE</div>
+        <p class="eyebrow">NOTEVOL PRESENTS</p>
+        <h1>
+          NEON<br />
+          <span>PULSE</span>
+        </h1>
+        <p class="hero-copy">
+          一页式手机端未来秀场。向上滑动、横向拖拽、点击呼吸球，感受一场带有霓虹温度的数字展演。
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary action-jump" data-target="#showcase">进入脉冲场</button>
+          <button class="ghost action-pulse">点亮核心</button>
+        </div>
+
+        <div class="orbital-wrap">
+          <div class="pulse-core">
+            <div class="pulse-ring ring-a"></div>
+            <div class="pulse-ring ring-b"></div>
+            <div class="pulse-ring ring-c"></div>
+            <div class="core-label">TOUCH</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="metrics grid-3">
+        <article class="metric card tilt" data-tilt>
+          <span>FPS AURA</span>
+          <strong>120</strong>
+          <p>以高对比渐变与动态景深构建移动端第一屏冲击。</p>
+        </article>
+        <article class="metric card tilt" data-tilt>
+          <span>GESTURE</span>
+          <strong>∞</strong>
+          <p>滑动、拖拽、触摸反馈统合成一套沉浸式观展语言。</p>
+        </article>
+        <article class="metric card tilt" data-tilt>
+          <span>MOOD</span>
+          <strong>09</strong>
+          <p>从深空紫到电流蓝，每一层光都围绕“惊艳展示”展开。</p>
+        </article>
+      </section>
+
+      <section id="showcase" class="showcase card">
+        <div class="section-head">
+          <p>SWIPE GALLERY</p>
+          <h2>横向拖拽浏览未来场景</h2>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <article class="panel active" style="--tone:#83ffe1; --bg1:#18363b; --bg2:#0d1127;">
+            <div class="panel-tag">01 / SKYLINE</div>
+            <h3>云端霓虹城</h3>
+            <p>像城市广告片一样的开场，在掌心中展开高楼、雾气与激光的重叠层次。</p>
+          </article>
+          <article class="panel" style="--tone:#ff8cc8; --bg1:#3c1530; --bg2:#100b1d;">
+            <div class="panel-tag">02 / LIQUID</div>
+            <h3>流体幻彩池</h3>
+            <p>用大面积玻璃拟态与液态反光，让页面像活着一样呼吸起伏。</p>
+          </article>
+          <article class="panel" style="--tone:#8fb3ff; --bg1:#131f48; --bg2:#090b15;">
+            <div class="panel-tag">03 / SIGNAL</div>
+            <h3>电磁信号塔</h3>
+            <p>发射状光束和粒子风暴在纵深空间里交错，形成海报级视觉中心。</p>
+          </article>
+        </div>
+
+        <div class="carousel-dots" id="dots"></div>
+      </section>
+
+      <section class="story grid-stack">
+        <article class="story-card card tilt" data-tilt>
+          <p>IMMERSION</p>
+          <h3>像在刷一支顶级品牌预告片</h3>
+          <p>
+            整体排版完全偏移动端，信息量克制，但通过大字号、留白和光效形成强烈记忆点。
+          </p>
+        </article>
+        <article class="story-card tall card tilt" data-tilt>
+          <p>SOUNDLESS RHYTHM</p>
+          <h3>没有声音，也能感到节拍</h3>
+          <p>
+            所有动画遵循“脉冲”主题：扩散、回弹、漂浮、跟手偏移，让页面像有音乐一样律动。
+          </p>
+        </article>
+      </section>
+
+      <section class="cta card tilt" data-tilt>
+        <p>READY TO LAUNCH</p>
+        <h2>把这页直接部署出去，手机立刻可访问</h2>
+        <ul>
+          <li>本地预览：直接用静态服务器启动，支持手机同网访问。</li>
+          <li>静态部署：构建后可直接丢到任意静态托管平台。</li>
+          <li>展示用途：品牌发布、活动邀请、创意作品集首页都适用。</li>
+        </ul>
+        <button class="primary action-jump" data-target="top">回到顶部</button>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
